@@ -3,6 +3,7 @@
     - g+shift+h => find all the references to a symbol
     - g+t => go to the next open file
     - g+shift+t => go to the previous file
+    - Visual mode + select with j and press m+i for multiline editing
 */
 {
   "workbench.colorTheme": "Catppuccin Macchiato",
