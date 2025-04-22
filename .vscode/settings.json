@@ -1,3 +1,119 @@
+/*
+  Shortcuts:
+    - g+shift+h => find all the references to a symbol
+    - g+t => go to the next open file
+    - g+shift+t => go to the previous file
+*/
 {
-    "codium.codeCompletion.enable": true
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "catppuccin-icons.hidesExplorerArrows": true,
+  // sidebar tree view
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 12,
+  // explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmDelete": true,
+  "explorer.decorations.badges": false,
+  // git
+  "git.decorations.enabled": false,
+  // window
+  "window.zoomLevel": 1,
+  // top title bar area
+  "window.customTitleBarVisibility": "auto",
+  "window.titleBarStyle": "custom",
+
+  // custom ui style extension config
+  "custom-ui-style.stylesheet": {
+    ".notification-toast": "box-shadow: none !important",
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+    ".quick-input-widget": "top: 25vh !important",
+    ".quick-input-list .scrollbar": "display: none",
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+    ".quick-input-titlebar": "background: #100B15 !important",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+    ".sidebar .title-label": "padding: 0 !important",
+    ".sidebar": "border: none !important",
+    ".monaco-editor .scroll-decoration": "display: none",
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #ffaffc 10%, #DA70D6 100%)"
+  },
+  "custom-ui-style.font.sansSerif": "Dank Mono",
+
+  // editor
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+   "workbench.colorCustomizations": {
+    "editorCursor.background": "#000"
+  },
+  "editor.formatOnSave": true,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "line",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 2,
+  "editor.fontSize": 16,
+  "editor.renderWhitespace": "none",
+  "editor.fontFamily": "'Dank Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.scrollbar.verticalScrollbarSize": 16,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+
+      }
+    ]
+  },
+  "editor.stickyScroll.enabled": true,
+  "editor.links": false,
+  "editor.parameterHints.enabled": false, // shit+k shift+k
+  "editor.lightbulb.enabled": "off", // ctrl+.
+  "editor.hover.enabled": false, // g+h
+  "editor.lineNumbers": "relative",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.showFoldingControls": "never",
+  "editor.occurrencesHighlight": "off",
+  "editor.selectionHighlight": false,
+  "editor.renderLineHighlight": "none",
+  // editor scrollbars
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "afterDelay",
+  // git diff decorators
+  "scm.diffDecorations": "none",
+
+  // code runner extension config
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc -Wall -Wextra -std=c2x -pedantic $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "apc.stylesheet": {
+    "*": "font-family: 'Dank Mono', 'Fire Code', 'Cascadia Code', 'Courier New', monospace;",
+    ".editor .title": "background: transparent !important;"
+  },
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "vscode-neovim.useWSL": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "extensions.ignoreRecommendations": true,
 }
